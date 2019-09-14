@@ -6,10 +6,10 @@ A really simple, and basic digital clock. Primary purpose is for Windows 10 IoT 
 ## SETUP, DEPLOY NOTES
 Microsoft Guide for <a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/rpi" target="_blank">Setting up a Raspberry Pi </a>
 
-For Pi, deploy to ARM target, Remote Device.
-![Visual Studio Debug Toolbar](Annotation 2019-09-14 140412.png?raw=true "Deploy Target Config")
+For Pi, deploy to ARM target, Remote Device.  
+![Visual Studio Debug Toolbar]("Annotation 2019-09-14 140412.png"?raw=true "Deploy Target Config")
 
-When you select Remote Machine from the dropdown, Visual Studio will detect your Pi3 assuming it's online connected to your LAN.
+When you select Remote Machine from the dropdown, Visual Studio will detect your Pi3 assuming it's online connected to your LAN.  
 ![Pi3 Auto Detection Remote Machine](Annotation 2019-09-14 135842.png?raw=true "Deploy Target Config")
 
 
@@ -28,7 +28,7 @@ It takes very little code to get this clock running.
 ```
 
 2. Create the ticker to serve as the clock's engine, and fire it up in MainPage.xaml.cs
-```XML
+```C#
         public MainPage()
         {
             this.InitializeComponent();
