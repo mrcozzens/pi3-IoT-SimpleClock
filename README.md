@@ -7,10 +7,10 @@ A really simple, and basic digital clock. Primary purpose is for Windows 10 IoT 
 Microsoft Guide for <a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/rpi" target="_blank">Setting up a Raspberry Pi </a>
 
 For Pi, deploy to ARM target, Remote Device.  
-![Visual Studio Debug Toolbar]("Annotation 2019-09-14 140412.png"?raw=true "Deploy Target Config")
+![Visual Studio Debug Toolbar](pi3-vs-toolbar.png?raw=true "Deploy Target Config")  
 
 When you select Remote Machine from the dropdown, Visual Studio will detect your Pi3 assuming it's online connected to your LAN.  
-![Pi3 Auto Detection Remote Machine](Annotation 2019-09-14 135842.png?raw=true "Deploy Target Config")
+![Pi3 Auto Detection Remote Machine](pi3-vs-remoteMachine.png?raw=true "Deploy Target Config")
 
 
 # **CORE CLOCK **
