@@ -20,18 +20,20 @@ namespace pi3_win10_iot_SimpleClock
 {
     /// <summary>
     /// Simple Clock Page Guts
+    /// For Pi, deploy to ARM target, Remote Device.
+    /// Assuming it's online and connected to your LAN, visual studio will detect it when you target REMOTE debug target.
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        DispatcherTimer Timer = new DispatcherTimer();
-
+        
         public MainPage()
         {
             this.InitializeComponent();
-          //  DataContext = this;
+
+            DispatcherTimer Timer = new DispatcherTimer();
             Timer.Tick += Timer_Tick;
-            Timer.Interval = new TimeSpan(0, 0, 1); // kick off the ticker forever
-            Timer.Start();
+            Timer.Interval = new TimeSpan(0, 0, 1); // hh,mi,ss tick once per second
+            Timer.Start(); // kick off the ticker forever
         }
 
         async void Timer_Tick(object Sender, object e)
@@ -39,7 +41,7 @@ namespace pi3_win10_iot_SimpleClock
             await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
             {
                 // Run the Code
-                txtTime.Text = DateTime.Now.ToString("h:mm:ss tt");
+                txtTime.Text = DateTime.Now.ToString("h:mm:ss tt"); // update the xaml text object
 
             });
         }
