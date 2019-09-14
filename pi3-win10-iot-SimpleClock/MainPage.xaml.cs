@@ -41,7 +41,7 @@ namespace pi3_win10_iot_SimpleClock
             await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
             {
                 // Run the Code
-                txtTime.Text = DateTime.Now.ToString("h:mm:ss tt"); // update the xaml text object
+                txtTime.Text = DateTime.Now.ToString("hh:mm:ss tt"); // update the xaml text object with friendy string formatted time
 
             });
         }

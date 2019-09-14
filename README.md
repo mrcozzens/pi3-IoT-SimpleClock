@@ -1,7 +1,7 @@
 # pi3-win10-iot-SimpleClock
 A really simple, and basic digital clock. Primary purpose is for Windows 10 IoT installed on Raspberry Pi 3 running on official pi display.  
 
-
+![Img Pi3 in Use in Bedroom](pi3SimpleClockBedroomRealLifeDemo.jpg?raw=true "Pi3 on Bedroom Night Stand")  
 
 ## SETUP, DEPLOY NOTES
 Microsoft Guide for <a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/rpi" target="_blank">Setting up a Raspberry Pi </a>
