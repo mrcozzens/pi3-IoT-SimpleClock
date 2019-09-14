@@ -29,25 +29,25 @@ It takes very little code to get this clock running.
 
 2. Create the ticker to serve as the clock's engine, and fire it up in MainPage.xaml.cs
 ```C#
-        public MainPage()
-        {
-            this.InitializeComponent();
+	public MainPage()
+	{
+		this.InitializeComponent();
 
-            DispatcherTimer Timer = new DispatcherTimer();
-            Timer.Tick += Timer_Tick;
-            Timer.Interval = new TimeSpan(0, 0, 1); // kick off the ticker forever
-            Timer.Start();
-        }
+		DispatcherTimer Timer = new DispatcherTimer();
+		Timer.Tick += Timer_Tick;
+		Timer.Interval = new TimeSpan(0, 0, 1); // hh,mi,ss tick once per second
+		Timer.Start(); // kick off the ticker forever
+	}
 
-        async void Timer_Tick(object Sender, object e)
-        {
-            await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
-            {
-                // Run the Code
-                txtTime.Text = DateTime.Now.ToString("h:mm:ss tt");
+	async void Timer_Tick(object Sender, object e)
+	{
+		await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
+		{
+			// Run the Code
+			txtTime.Text = DateTime.Now.ToString("hh:mm:ss tt"); // update the xaml text object with friendy string formatted time
 
-            });
-        }
+		});
+	}
 ```
 
 ![Alt text](pi3SimpleClockGif.gif?raw=true "Live Clock in Visual Studio")
