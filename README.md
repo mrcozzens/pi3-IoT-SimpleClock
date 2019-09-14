@@ -1,7 +1,7 @@
 # pi3-win10-iot-SimpleClock
 Really simple clock. Primarily designed for Raspberry Pi 3 with Windows 10 IOT installed.
 
-![Alt text](pi3SimpleClockGif.gif?raw=true "Title")
+![Alt text](pi3SimpleClockGif.gif?raw=true "Live Clock")
 
 1. Add the text block to the MainPage.xaml designed
 ```XML
