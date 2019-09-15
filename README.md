@@ -12,8 +12,7 @@ For Pi, deploy to ARM target, Remote Device.
 When you select Remote Machine from the dropdown, Visual Studio will detect your Pi3 assuming it's online connected to your LAN.  
 ![Pi3 Auto Detection Remote Machine](pi3-vs-remoteMachine.png?raw=true "Deploy Target Config")
 
-
-# **CORE CLOCK **
+## CLOCK PIECES
 It takes very little code to get this clock running.
 
 1. Add the visual text block to the MainPage.xaml, named it txtTime.
