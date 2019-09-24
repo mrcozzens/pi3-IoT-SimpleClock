@@ -4,6 +4,7 @@ A really simple, and basic digital clock. Primary purpose is for Windows 10 IoT 
 ![Img Pi3 in Use in Bedroom](http://www.mrcozzens.org/pi3-IoT-SimpleClock/readme-stuff/pi3SimpleClockBedroomRealLifeDemo.jpg "Pi3 on Bedroom Night Stand")  
 
 ## SETUP, DEPLOY NOTES
+I built this with Visual Studio 2019 Community Edition
 Microsoft Guide for <a href="https://docs.microsoft.com/en-us/windows/iot-core/tutorials/rpi" target="_blank">Setting up a Raspberry Pi </a>
 
 For Pi, deploy to ARM target, Remote Device.  
